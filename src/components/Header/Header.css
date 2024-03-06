@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+}
+
+.header_manu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+
+.header_manu>li:hover {
+    cursor: pointer;
+    color: var(--orange);
+    cursor: pointer;
+}
