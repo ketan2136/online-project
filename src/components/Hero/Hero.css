@@ -6,14 +6,14 @@
 .left-h {
     padding: 2rem;
     padding-top: 1.5rem;
-    flex:3;
+    flex: 3;
     display: flex;
     gap: 2rem;
     flex-direction: column;
 }
 
 .right-h {
-    flex:1;
+    flex: 1;
     position: relative;
     background-color: var(--orange);
 }
@@ -74,10 +74,12 @@
     display: flex;
     flex-direction: column;
 }
+
 .figures>div>span:nth-of-type(1) {
     color: #fff;
     font-size: 2rem;
 }
+
 .figures>div>span:nth-of-type(2) {
     color: var(--gray);
     text-transform: uppercase;
@@ -94,6 +96,7 @@
     background-color: var(--orange);
     width: 8rem;
 }
+
 .hero-buttons>:nth-child(2) {
     color: #fff;
     background-color: transparent;
@@ -104,7 +107,9 @@
 
 .right-h>.btn {
     position: absolute;
-    right: 3rem; top: 2rem; color: black;
+    right: 3rem;
+    top: 2rem;
+    color: black;
 }
 
 .heart-rate {
@@ -128,6 +133,7 @@
 .heart-rate>span:nth-child(2) {
     color: var(--gray);
 }
+
 .heart-rate>span:nth-child(3) {
     color: #fff;
     font-size: 1.5rem;
@@ -139,6 +145,7 @@
     right: 18rem;
     width: 23rem;
 }
+
 .hero_image_back {
     position: absolute;
     top: 4rem;
@@ -159,25 +166,110 @@
     right: 28rem;
 }
 
-.calories > img {
+.calories>img {
     width: 3rem;
 }
-.calories > div {
+
+.calories>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.calories > div > :nth-child(1) {
-   color: var(--gray);
+.calories>div> :nth-child(1) {
+    color: var(--gray);
 }
-.calories > div > :nth-child(2) {
-   color: #fff;
-   font-size: 1.5rem;
+
+.calories>div> :nth-child(2) {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .hero-blur {
     width: 22rem;
     height: 30rem;
     left: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 14rem;
+    }
+
+    .the-best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .figures>div>span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures>div>span:nth-of-type(2) {
+        font-size: small;
+    }
+
+    .right-h {
+        position: relative;
+        background: none;
+    }
+
+    .heart-rate {
+        left: 1rem;
+        top: 2rem;
+    }
+
+    .calories {
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+
+    .calories>img {
+        width: 2rem;
+    }
+
+    .calories>div> :nth-child(2) {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .hero_image {
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top: 4rem;
+        align-items: center;
+    }
+    .hero_image_back {
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    }
+    
+
 }
